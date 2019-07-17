@@ -1,0 +1,23 @@
+COMPOSER_CARD=org1_restAdmin@bmk_bc_dtp
+COMPOSER_NAMESPACES=never
+COMPOSER_AUTHENTICATION=true
+COMPOSER_MULTIUSER=true
+COMPOSER_PROVIDERS='{
+    "github": {
+        "provider": "github",
+        "module": "passport-github",
+        "clientID": "971d49bdfb34eb082195",
+        "clientSecret": "1085f9265cef3b02e226c3b9b8a0ae4283168d23",
+        "authPath": "/auth/github",
+        "callbackURL": "/auth/github/callback",
+        "successRedirect": "/",
+        "failureRedirect": "/"
+    }
+}'
+COMPOSER_DATASOURCES='{
+    "db": {
+        "name": "db",
+        "connector": "mongodb",
+        "host": "mongo"
+    }
+}'
